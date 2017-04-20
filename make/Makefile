@@ -14,7 +14,7 @@
 #   limitations under the License.
 #
 REGISTRY_HOST=docker.io
-USERNAME=baboons
+USERNAME=$(USER)
 NAME=$(shell basename $(PWD))
 
 RELEASE_SUPPORT := $(shell dirname $(abspath $(lastword $(MAKEFILE_LIST))))/.make-release-support
