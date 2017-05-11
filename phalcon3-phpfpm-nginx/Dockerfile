@@ -92,6 +92,4 @@ COPY conf/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 # Expose ports
 EXPOSE 80 443
 
-RUN service php7.1-fpm start
-
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
